@@ -1,1 +1,2 @@
-# hub
+
+# CICF Content Hub Integration
