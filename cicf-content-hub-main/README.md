@@ -1,2 +1,0 @@
-
-# CICF Content Hub Integration
