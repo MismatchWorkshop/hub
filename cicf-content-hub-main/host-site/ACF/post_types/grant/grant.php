@@ -1,0 +1,48 @@
+<?php 
+add_action( 'init', function() {
+	register_post_type( 'grant', array(
+	'labels' => array(
+		'name' => 'Grants',
+		'singular_name' => 'Grant',
+		'menu_name' => 'Grants',
+		'all_items' => 'All Grants',
+		'edit_item' => 'Edit Grant',
+		'view_item' => 'View Grant',
+		'view_items' => 'View Grants',
+		'add_new_item' => 'Add New Grant',
+		'add_new' => 'Add New Grant',
+		'new_item' => 'New Grant',
+		'parent_item_colon' => 'Parent Grant:',
+		'search_items' => 'Search Grants',
+		'not_found' => 'No grants found',
+		'not_found_in_trash' => 'No grants found in Trash',
+		'archives' => 'Grant Archives',
+		'attributes' => 'Grant Attributes',
+		'insert_into_item' => 'Insert into grant',
+		'uploaded_to_this_item' => 'Uploaded to this grant',
+		'filter_items_list' => 'Filter grants list',
+		'filter_by_date' => 'Filter grants by date',
+		'items_list_navigation' => 'Grants list navigation',
+		'items_list' => 'Grants list',
+		'item_published' => 'Grant published.',
+		'item_published_privately' => 'Grant published privately.',
+		'item_reverted_to_draft' => 'Grant reverted to draft.',
+		'item_scheduled' => 'Grant scheduled.',
+		'item_updated' => 'Grant updated.',
+		'item_link' => 'Grant Link',
+		'item_link_description' => 'A link to a grant.',
+	),
+	'public' => true,
+	'show_in_rest' => true,
+	'menu_icon' => 'dashicons-admin-post',
+	'supports' => array(
+		0 => 'title',
+		1 => 'editor',
+		2 => 'excerpt',
+		3 => 'thumbnail',
+		4 => 'custom-fields',
+	),
+	'delete_with_user' => false,
+) );
+} );
+
